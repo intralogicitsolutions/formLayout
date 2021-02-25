@@ -1,0 +1,297 @@
+:root {
+    --primary: #f65a60;
+    --white: #ffffff;
+    --h-color:#f2f6ff
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Style the tab */
+.tab {
+    padding: 80px 20px;
+    align-items: center;
+    float: left;
+    border-radius: 0px 20px 20px 0px;
+
+    background-color: var(--primary);
+    width: 23%;
+    height: 650px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 12px 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: var(--white);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    color: var(--white);
+}
+
+.tab button.active .circle {
+    box-shadow: 2px 2px 13px 3px #fba4ad;
+    background-color: #fb394d;
+}
+/* Style the tab content */
+/* .tabcontent {
+    float: left;
+    padding: 0px 12px;
+
+    width: 70%;
+    border-left: none;
+    height: 300px;
+} */
+.tabcontent {
+   box-shadow: 2px 2px 15px 3px #dee2e6;
+    float: left;
+    padding: 0px 12px;
+    width: 75%;
+    border-left: none;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    display: block;
+    margin-left: -55px;
+    margin-top: 40px;
+    height: 575px;
+    border: 1px solid #ccc;
+    background-color: var(--white);
+}
+.tab1 {
+    overflow: hidden;
+
+    background-color: var( --h-color);
+}
+
+/* Style the buttons that are used to open the tab1 content */
+.tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+    background-color: #0dcaf038;
+}
+
+/* Create an active/current tab1link class */
+.tab1 button.active {
+    background-color: #0dcaf038;
+}
+
+/* Style the tab1 content */
+.tab1content {
+    display: none;
+    padding: 6px 12px;
+
+    border-top: none;
+}
+.tab1content {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.previous-tab,
+.next-tab {
+    display: inline-block;
+    border: 1px solid #444348;
+    border-radius: 3px;
+    margin: 5px;
+    color: #444348;
+    font-size: 14px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.tab2 {
+    overflow: hidden;
+
+    background-color: var( --h-color);
+}
+
+/* Style the buttons that are used to open the tab2 content */
+.tab2 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+    background-color: #0dcaf038;;
+}
+
+/* Create an active/current tab2link class */
+.tab2 button.active {
+    background-color: #0dcaf038;;
+}
+
+/* Style the tab2 content */
+.tab2content {
+    display: none;
+    padding: 6px 12px;
+
+    border-top: none;
+}
+.tab2content {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.tab3 {
+    overflow: hidden;
+
+    background-color: var( --h-color);
+}
+
+/* Style the buttons that are used to open the tab3 content */
+.tab3 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab3 button:hover {
+    background-color: #0dcaf038;;
+}
+
+/* Create an active/current tab3link class */
+.tab3 button.active {
+    background-color: #0dcaf038;;
+}
+
+/* Style the tab3 content */
+.tab3content {
+    display: none;
+    padding: 6px 12px;
+
+    border-top: none;
+}
+.tab3content {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.form-container {
+    height: 100%;
+    /* border-radius: 10px;
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    display: block;
+    margin-left: -57px;
+    margin-top: 40px;
+    height: 514px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: var(--white); */
+}
+.circle {
+    box-shadow: 2px 2px 13px 3px #dee2e6;
+    height: 45px;
+    width: 45px;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    border-radius: 45px;
+    background: #fba4ad;
+}
+.circle p {
+    padding: 9px;
+}
+.float-right{
+    float:right;
+}
+.halfCircleLeft {
+    z-index: 0;
+    position: absolute;
+    float: right;
+    right: 0;
+    height: 650px;
+    width: 325px;
+    border-radius: 650px 0px 0px 650px;
+    /* border-radius: 90px 0 0 90px; */
+    background: var(--primary);
+}
+.halfCircleLeftInner {
+    margin-top: 125px;
+    z-index: 0;
+    position: absolute;
+    float: right;
+    right: 0;
+    height: 400px;
+    width: 200px;
+    border-radius: 400px 0px 0px 400px;
+    /* border-radius: 90px 0 0 90px; */
+    background: var(--white);
+}
+.form-content {
+    height: 400px;
+}
+.form-footer {
+    text-align: end;
+}
+.header-div {
+    width: 100%;
+    height: 61px;
+    padding: 10px !important;
+    background-color: var(--h-color) !important;
+}
